@@ -60,3 +60,30 @@ code{
   color: white;
 }
 
+/* MODIFIED FROM CLASS NOTES AND EXAMPLES ON 9/25/2019 */
+.formitem{
+  display: block;
+  background: #C98CA7;
+  color:#black;
+  margin:5px;
+  padding: 10px;
+
+.formitem label{
+
+}
+
+.formitem .showerror{
+  display:block;
+  color: #9DE8DF;
+  font-weight: bold;
+  font-size:1.3em;
+}
+
+#example{
+    min-height: 100px;
+    min-width: 500px;
+    background-color:lightpink;
+    border:1px solid #cccccc;
+    margin-top:20px;
+}
+
