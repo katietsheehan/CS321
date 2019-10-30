@@ -10,7 +10,7 @@ type="text/css"
 rel="stylesheet">
 
 <script src="form.php"></script>
-  <!--<script src="javascript/script.js"></script>-->
+  <script src="javascript/script.js"></script>
 
 <h1> K.T.S Records </h1>
 <img src="https://png.pngtree.com/png-vector/20190223/ourlarge/pngtree-vector-vinyl-player-icon-png-image_696317.jpg"
