@@ -9,7 +9,8 @@
 type="text/css"
 rel="stylesheet">
 
-<script src="javascript/script.js"></script>
+<script src="form.php"></script>
+  <!--<script src="javascript/script.js"></script>-->
 
 <h1> K.T.S Records </h1>
 <img src="https://png.pngtree.com/png-vector/20190223/ourlarge/pngtree-vector-vinyl-player-icon-png-image_696317.jpg"
@@ -17,14 +18,14 @@ class = "mainimage">
 
 <div class = "topnav">
     <nav>
-      <a href="CS321Landing.html"> Home </a>
-      <a class = "active" href="Studio.html">Studio </a>
+      <a href="index.php"> Home </a>
+      <a class = "active" href="studio.php">Studio </a>
         <!-- make this a drop down
          <ul>
           <li>Booking</li>
           <li>Equipment</li>
         </ul> -->
-        <a href="Artists.html"> Artists</a>
+        <a href="artist.php"> Artists</a>
       <!--  <ul>
           <li>All</li>
           <li>Genre</li>
@@ -45,7 +46,7 @@ class = "mainimage">
 <!-- FORM CODE FROM https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_mail
 MODIFIED USING CLASS NOTES AND EXAMPLES FROM 9/25/19 -->
 
-  <form class="form" action="#" method="post" enctype="text/plain">
+  <form class="form" method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" enctype="text/plain">
 
     <div class="formitem">
       <label for="name">Name: </label>
@@ -77,11 +78,21 @@ MODIFIED USING CLASS NOTES AND EXAMPLES FROM 9/25/19 -->
 <!--Comment:<br>
 <input type="text" name="comment" size="50"><br><br>-->
 
-<input type="button" value="Send" onclick="checkAll()">
+<input type="button" value="Send" <!--onclick="checkAll()-->">
 <input type="reset" value="Reset">
 
 
 </form>
+<?php
+echo "Your Input:";
+echo $name;
+echo "<br>";
+echo $email;
+echo "<br>";
+echo $phone;
+echo "<br>";
+echo $comment;
+?>
 
 </body>
 </html>
@@ -96,3 +107,4 @@ MODIFIED USING CLASS NOTES AND EXAMPLES FROM 9/25/19 -->
   </footer>
 
   </html>
+
